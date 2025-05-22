@@ -41,20 +41,20 @@ int main(void) {
   int a, b, op;
 
   do {
-	  op = menu();
+	op = menu();
 	
-	  switch (op) {
-	  case 0:
-	      printf("Fim do programa.\n");
-	      break;
-	  case 1:
-	      ler_valores(&a, &b);
-	      printf("Soma: %d\n", add(a, b));
-	      break;
-	  case 2:
-	      ler_valores(&a, &b);
-	      printf("Subtracao: %d\n", sub(a, b));
-	      break;
+	switch (op) {
+	case 0:
+	    printf("Fim do programa.\n");
+	    break;
+	case 1:
+	    ler_valores(&a, &b);
+	    printf("Soma: %d\n", add(a, b));
+	    break;
+	case 2:
+	    ler_valores(&a, &b);
+	    printf("Subtracao: %d\n", sub(a, b));
+	    break;
   	case 3:
   	    ler_valores(&a, &b);
   	    printf("Produto: %d\n", mul(a, b));
